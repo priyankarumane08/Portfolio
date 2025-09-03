@@ -43,6 +43,13 @@
   margin-left: 10px;
 }
 
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+	height: auto; /* Center the image if it's smaller than its container */
+}
 
 .skill-mf .progress {
   /* background-color: #cde1f8; */
@@ -141,8 +148,12 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/img1-bg.png);">
+	          	<div class="one-third js-fullheight order-md-last img" >
 	          	 <div class="overlay"></div>
+	          	 <picture>
+						<source media="(max-width: 768px)" srcset="images/img1-bg-small.png"> <!-- Create a smaller version of your image for mobile -->
+						<img src="images/img1-bg.png" alt="Prashant Gawali - DevOps Engineer" class="img-fluid hero-img">
+					</picture>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
