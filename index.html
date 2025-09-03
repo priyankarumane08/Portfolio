@@ -43,12 +43,24 @@
   margin-left: 10px;
 }
 
+
+
 .hero-img {
     max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-	height: auto; /* Center the image if it's smaller than its container */
+    
+  	  display: block;
+      margin: 0 ;
+	  height: auto; /* Center the image if it's smaller than its container */
+	  display: flex;
+	  max-height: 100vh;
+	  flex: 1;
+	  justify-content: flex-end;  /* stick image to the right */
+	  align-items: flex-start;
+	  padding-left: 20%;
+	   transform: scale(1.4); /* zoom 20% */
+  transform-origin: center;
+ 
+ 
 }
 
 .skill-mf .progress {
@@ -152,7 +164,7 @@
 	          	 <div class="overlay"></div>
 	          	 <picture>
 						<source media="(max-width: 768px)" srcset="images/img1-bg-small.png"> <!-- Create a smaller version of your image for mobile -->
-						<img src="images/img1-bg.png" alt="Prashant Gawali - DevOps Engineer" class="img-fluid hero-img">
+						<img src="images/full-img.png" alt="Prashant Gawali - DevOps Engineer" class="img-fluid hero-img">
 					</picture>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -189,7 +201,7 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/image2.png" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="images/profile-img.png" class="img-fluid rounded b-shadow-a" alt="">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
@@ -377,7 +389,7 @@
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="D:\Portfolio-Website-Template\Prashant_Gawali_3y_Azure.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="Prashant_Gawali_3y_Azure.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -397,11 +409,11 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/Project-img1.png');">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/Project-img1.png');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Continuous Deployment for Electronic Health Records (EHR) System</a></h3>
+                <h3 class="heading"><a href="#">Continuous Deployment for Electronic Health Records (EHR) System</a></h3>
                 <p> Led the implementation of a DevOps pipeline for a healthcare organization’s Electronic Health Records (EHR) system.
 					Automated deployment of updates and patches while ensuring compliance with HIPAA regulations.
 					Designed and implemented automated testing for data integrity, security checks, and performance testing. Utilized Git
@@ -413,11 +425,11 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/Project-img2.png');">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/Project-img2.png');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analytics Pipeline Automation</a></h3>
+                <h3 class="heading"><a href="#">Data Analytics Pipeline Automation</a></h3>
                 <p>Led the deployment and automation of a data analytics pipeline for a US client on AWS. The pipeline ingests data from SFTP into an S3 bucket, processes it using AWS Glue crawlers, jobs and Spark EMR, exposes the processed data via
 					 Lambda and API Gateway, and visualizes insights using QuickSight for Business Intelligence. As a key team member, I was responsible for infrastructure deployment with Terraform, setting up CI/CD pipelines
 					 using Jenkins, and implementing automations using Python Lambda functions.</p>
@@ -426,11 +438,11 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/Project-img3.png');">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/Project-img3.png');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg"> End-to-End CI/CD on Azure for Containerized Web Application</a></h3>
+                <h3 class="heading"><a href="#"> End-to-End CI/CD on Azure for Containerized Web Application</a></h3>
                 <p>D Designed and implemented a complete CI/CD pipeline using Azure DevOps to build, test, scan, and deploy a
 					Dockerized web application on Azure Kubernetes Service (AKS). Automated infrastructure provisioning using Terraform for AKS, Azure Container Registry (ACR), VNet, and resource
 					groups, following Infrastructure as Code (IaC) best practices.Configured CI pipeline for linting, unit testing, Docker image build, vulnerability scanning with Trivy, and pushing to
@@ -568,7 +580,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
+	            <p><a href="Prashant_Gawali_3y_Azure.pdf">resumelink</a></p>
 	          </div>
           </div>
 
@@ -583,11 +595,11 @@
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@prashantgawali4562"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/prashant-gawali-184265245/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/share/1QZTECWrC7/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/pr28072002/?next=%2F"><span class="icon-instagram"></span></a></li>
 					</ul>
 				<br>
 		   </div>
